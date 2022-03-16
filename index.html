@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
+    <title>Document</title>
+</head>
+<style>
+          #minutes{
+        border: 1px solid rgb(59, 5, 97);
+        padding: 2px;
+        text-align: center;
+    }
+    #startBtn{
+        font-size: small;
+        background-color: rgb(49, 4, 82);
+        padding: 5px 8px;
+        color: #fff;
+    }
+</style>
+<body class="font-sans">
+    <div class="w-full h-screen bg-black flex items-center justify-center" >
+        <div class="max-w-4xl w-full p-5">
+            <div class="shadow bg-white flex flex-col items-center justify-center">
+                <h1 class="text-4xl font-bold my-3"><span>Countdown Timer</span></h1>
+                <div id="canvas" class="container group flex flex-col items-center">
+            
+                    <div id="primaryContent" class="group">
+                        <p class="text-sm font-bold">Input the time in hours and click start</p>
+                        <div id="inputArea" class="my-3"></div>
+                        <h2 id="time" class="text-center font-bold text-xl">0:00:00</h2>
+            
+                        <div class="flex justify-around my-3">
+                            <button onclick="pause()"  class="rounded-lg bg-purple-900 py-1 px-4 text-sm text-white" >
+                                pause
+                            </button>
+                            <button onclick="resetPage()"  class="rounded-lg bg-purple-900 py-1 px-4 text-sm text-white" >
+                                reset
+                            </button>
+                        </div>
+                    </div>
+            
+            
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
